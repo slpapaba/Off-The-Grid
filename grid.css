@@ -1,0 +1,97 @@
+.main {
+    display: grid;
+    height: 600px;  
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    background-color: rgb(190, 138, 167);
+    grid-gap: 2px;
+    align-items: stretch;
+    justify-items: stretch;
+    align-content: start;
+    justify-content: end;
+}
+
+header {
+    background-color: rgb(155, 113, 189);
+    grid-column: 1/5;
+    grid-row: 1/1;
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(241, 193, 193);
+    grid-column: 1/5;
+    grid-row: 2/2;
+    position:sticky;
+    top:1px;
+    background-color: rgb(190, 130, 230);
+    top: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 5px;
+    text-align: right;
+
+}
+
+.ulList {
+    display: inline-flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.liList{
+    margin-right: 5px;
+}
+
+article {
+    background-color: rgb(224, 145, 214);
+    grid-column: 1/3;
+    grid-row: 3/8;
+    margin: 7px;
+    color: rgb(104, 34, 34);
+    font-family: Times, "Times New Roman";
+    font-size: 1.3em;
+}
+
+aside {
+    background-color: rgb(224, 145, 214);
+    grid-column: 3/5;
+    grid-row: 3/8;
+    margin: 7px;
+    color: rgb(82, 21, 21);
+    font-family: Times, "Times New Roman"f;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: rgb(192, 64, 252);
+    grid-column: 1/5;
+    grid-row: 9/9;
+    color: black;
+    text-align: center;
+    font-family: Times, "Times New Roman";
+    font-size: 1.6em;
+}
+
+.box{
+    height: 300px;
+    width: 615px;
+    padding: 9px;
+}
+
+.box2{
+    height: 150px;
+    width: 500px;
+    padding: 9px;
+}
+.box3{
+    height: 100px;
+    width: 500px;
+}
+
+.contactText{
+    color: rgb(82, 21, 21);
+    font-family: Times, "Times New Roman"f;
+    font-size: 1.5em;
+  }
